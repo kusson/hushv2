@@ -1,0 +1,18 @@
+* {
+    background-color: rgb(58, 58, 124);
+    color: white;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+h1 {
+    font-family: 'Lilita One', cursive;
+}
+
+
+
+.app {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
