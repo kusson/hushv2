@@ -1,18 +1,27 @@
 * {
-    background-color: rgb(58, 58, 124);
+    background-color: rgb(33, 33, 72);
     color: white;
     font-family: 'Roboto Flex', sans-serif;
 }
 
 h1 {
     font-family: 'Lilita One', cursive;
+    display: flex;
+    justify-content: center;
 }
 
-
-
 .app {
-    padding: 5rem;
     display: flex;
     justify-content: center;
     align-content: center;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
 }

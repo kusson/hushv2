@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 1rem;
+    justify-content: space-between;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0rem;
+}
+
+.navlist li {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem 0rem;
+}
+
+img {
+    width: auto;
+    height: 70px;
+}
+
+/* BurgerMenu styling */
+.burgerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.line {
+    background-color: white;
+    height: 2px;
+    width: 20px;
+    margin: 2px;
+}
