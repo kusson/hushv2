@@ -3,6 +3,7 @@
 import React from "react";
 import "@styles/navbar.css";
 import Image from 'next/image';
+import Link from "next/link";
 import logo from "../public/images/hushhushlogo_nobg_white.png"
 
 const Navbar = () => {
@@ -26,22 +27,25 @@ const Navbar = () => {
         } 
     }
 
+    async function autoClose() {
+
+    }
 
     //navbar for website
   return (
     <nav className="navbar">
                 
         {/*navbar logo image*/}
-        <a className="navbar-logo" href="#">
+        <a className="navbar-logo" href="/">
              <Image className="logo" src={logo} />
         </a>
     
         {/*navbar link list */}
         <ul className="navlist" id="navlist">
-            <li><a href="#"/>Home</li>
-            <li><a href="about"/>About</li>
-            <li><a href="portfolio"/>Portfolio</li>
-            <li><a href="services"/>Services</li>
+            <Link href="/" onClick={burgerToggle}>Home</Link>
+            <Link href="/about" onClick={burgerToggle}>About</Link>
+            <Link href="/portfolio" onClick={burgerToggle}>Portfolio</Link>
+            <Link href="/services" onClick={burgerToggle}>Services</Link>
         </ul>
         {/*burger menu */}
         <div className="burgerMenu" onClick={burgerToggle}>

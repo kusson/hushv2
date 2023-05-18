@@ -3,6 +3,7 @@ import "@styles/home.css";
 import Image from 'next/image';
 import logo from "../public/hushlogo_bg.png";
 
+//localhost:3000 (HomePage)
 
 const Home = () => {
   return (
