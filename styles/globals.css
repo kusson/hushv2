@@ -4,6 +4,10 @@
     font-family: 'Roboto Flex', sans-serif;
 }
 
+main {
+    flex-direction: column;
+}
+
 h1 {
     font-family: 'Lilita One', cursive;
     display: flex;
@@ -23,5 +27,10 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
+}
+
+.app>hr {
+    width: 70%;
+    max-width: 640px;
 }

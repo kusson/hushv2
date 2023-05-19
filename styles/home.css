@@ -1,6 +1,10 @@
 .homeTitle {
     border-style: solid ;
     border-color: white;
-    padding: 1rem;
+    padding: 0rem 1rem;
     border-radius: 1rem;
+}
+
+.homeTitle>h1 {
+    padding: 0;
 }

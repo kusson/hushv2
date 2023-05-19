@@ -27,34 +27,46 @@ const Navbar = () => {
         } 
     }
 
-    async function autoClose() {
+    //close burgermenu automatically upon clicking on a link
+    function autoClose() {
+        let x = document.getElementById("navlist");
+        let l1 = document.getElementById("l1");
+        let l2 = document.getElementById("l2");
+        let l3 = document.getElementById("l3");
 
+        x.className = "navlist";
+        l1.className = "line l1";
+        l2.className = "line l2";
+        l3.className = "line l3";
     }
 
+
     //navbar for website
-  return (
-    <nav className="navbar">
-                
-        {/*navbar logo image*/}
-        <a className="navbar-logo" href="/">
-             <Image className="logo" src={logo} />
-        </a>
-    
-        {/*navbar link list */}
-        <ul className="navlist" id="navlist">
-            <Link href="/" onClick={burgerToggle}>Home</Link>
-            <Link href="/about" onClick={burgerToggle}>About</Link>
-            <Link href="/portfolio" onClick={burgerToggle}>Portfolio</Link>
-            <Link href="/services" onClick={burgerToggle}>Services</Link>
-        </ul>
-        {/*burger menu */}
-        <div className="burgerMenu" onClick={burgerToggle}>
-            <div className="line l1" id="l1"/>
-            <div className="line l2" id="l2"/>
-            <div className="line l3" id="l3"/>
-        </div>
-    </nav>
-  )
+    return (
+        <nav className="navbar">
+                    
+            {/*navbar logo image*/}
+            <a className="navbar-logo" href="/">
+                <Image className="logo" src={logo} />
+            </a>
+        
+            {/*navbar link list */}
+            <ul className="navlist" id="navlist">
+                <Link href="/" onClick={autoClose}>Home</Link>
+                <Link href="/about" onClick={autoClose}>About</Link>
+                <Link href="/portfolio" onClick={autoClose}>Portfolio</Link>
+                <Link href="/services" onClick={autoClose}>Services</Link>
+            </ul>
+
+            {/*burger menu */}
+            <div className="burgerMenu" onClick={burgerToggle}>
+                <div className="line l1" id="l1"/>
+                <div className="line l2" id="l2"/>
+                <div className="line l3" id="l3"/>
+            </div>
+
+        </nav>
+    )
 }
 
 export default Navbar;

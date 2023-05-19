@@ -1,7 +1,6 @@
 import React from 'react';
 import "@styles/globals.css";
 import Navbar from '@components/navbar';
-import closeBurger from '@utils/closeBurger';
 
 
 
@@ -23,9 +22,10 @@ const RootLayout = ( {children} ) => {
                 
             </head>
 
-            <body onLoad={closeBurger}>
+            <body>
             <Navbar />
                 <main className="app">
+                    <hr />
                     {children}
                 </main>
             </body>

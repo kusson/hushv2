@@ -1,0 +1,27 @@
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    line-height: 30px;
+    justify-content: center;
+    align-content: center;
+}
+
+div.text>h1 {
+    padding: 2rem 0rem;
+}
+
+
+.text {
+    max-width: 90%;
+    margin: 0 auto;
+    white-space: normal;
+}
+
+@media screen and (min-width:700px) {
+
+    .text {
+        max-width: 640px;
+    }
+}
