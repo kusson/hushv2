@@ -1,0 +1,23 @@
+.serviceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.serviceoptions {
+    border-radius: 1rem;
+}
+
+span {
+    padding: 0rem 0.3rem;
+    font-weight: 700;
+}
+
+.serviceoptions>a {
+    text-decoration: none;
+}
+
+.heroimg {
+    width: 30px;
+}
