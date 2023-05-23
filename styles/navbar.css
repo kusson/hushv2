@@ -101,6 +101,13 @@ img {
         margin: 0 auto;
         max-width: fit-content;
     }
+
+    .navbar-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        size: 0;
+    }
     
     .navlist {
         display: flex;
@@ -112,6 +119,7 @@ img {
         width: initial;
         top: initial;
         left: initial;
+        padding: 0;
     }
     
     .navlist>a {

@@ -1,8 +1,7 @@
 import React from 'react'
 import "@styles/services.css";
-import Herocard from '@components/herocard';
+import ServiceHerocard from '@components/serviceherocard';
 import ServiceOptions from './serviceoptions';
-import ServiceItems from './serviceitems';
 
 //localhost:3000/services
 
@@ -10,8 +9,9 @@ const Services = () => {
 
     function createServiceOptions(ServiceOptions) {
         return (
-            <Herocard 
+            <ServiceHerocard 
                 key={ServiceOptions.id}
+                class={ServiceOptions.class}
                 servicetitle={ServiceOptions.servicetitle}
                 pricing={ServiceOptions.pricing}
                 img={ServiceOptions.img}
@@ -27,18 +27,12 @@ const Services = () => {
         <div className="serviceoptions">
             <a href="#thecaress"><span>The Caress</span></a>
             <span>|</span>
-            <span>The Meticulous</span>
+            <a href="#themeticulous"><span>The Meticulous</span></a>
             <span>|</span>
-            <span>The Overhaul</span>
+            <a href="#theoverhaul"><span>The Overhaul</span></a>
         </div>
 
-        {/* Pricing and service details presented in Herocard style. */}
-        <div className="serviceDetails">
-            <div className="thecaress" id="thecaress"></div>
-            <div className="themeticulous" id="themeticulous"></div>
-            <div className="theoverhaul" id="theoverhaul"></div>
-        </div>
-
+        {/* This creates the service options and items by using a herocard generator */}
         {ServiceOptions.map(createServiceOptions)}
 
     </div>

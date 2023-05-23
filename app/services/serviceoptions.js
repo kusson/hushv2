@@ -1,31 +1,34 @@
+//List of service options provided.
+
+import logo from "../../public/images/hushhushlogo_nobg_white.png"
 const ServiceOptions = [
 
     {
         id: 0,
+        class: "thecaress",
         servicetitle: "The Caress",
         pricing: "Starting from $70",
-        img: "/public/images/hushhushlogo_nobg_white.png",
+        img: logo,
         servicelistid: "0",
     },
 
     {
         id: 1,
+        class: "themeticulous",
         servicetitle: "The Meticulous",
         pricing: "Starting from $150",
-        img: "/public/images/hushhushlogo_nobg_white.png",
+        img: logo,
         servicelistid: "1",
     },
     
     {
         id: 2,
+        class: "theoverhaul",
         servicetitle: "The Overhaul",
         pricing: "Starting from $250",
-        img: "/public/images/hushhushlogo_nobg_white.png",
+        img: logo,
         servicelistid: "2",
     },
 ]
 
 export default ServiceOptions;
-
-// Change the name of Servicelist ServiceItems etc. 
-// and seperate sil into a different file and map it in ServiceList seperately.
