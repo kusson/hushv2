@@ -21,7 +21,7 @@ const ServiceHerocard = (props) => {
                     <h3>{props.pricing}</h3>
                 </div>
 
-                <ul>
+                <ul className="serviceList">
                     {/* This component generates the list of services. It uses key from ServiceOptions that correlates to the index of objects in array in ServiceItems*/}
                     <ServiceList 
                         item1 = {ServiceItems[props.servicelistid].item1}

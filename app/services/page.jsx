@@ -2,6 +2,7 @@ import React from 'react'
 import "@styles/services.css";
 import ServiceHerocard from '@components/serviceherocard';
 import ServiceOptions from './serviceoptions';
+import Alacarte from './alacarte';
 
 //localhost:3000/services
 
@@ -25,15 +26,24 @@ const Services = () => {
         
         {/* Top service selection bar that brings user to specific part of the page. */}
         <div className="serviceoptions">
-            <a href="#thecaress"><span>The Caress</span></a>
-            <span>|</span>
-            <a href="#themeticulous"><span>The Meticulous</span></a>
-            <span>|</span>
-            <a href="#theoverhaul"><span>The Overhaul</span></a>
+            <a href="#thecaress">The Caress</a>
+            <div>|</div>
+            <a href="#themeticulous">The Meticulous</a>
+            <div>|</div>
+            <a href="#theoverhaul">The Overhaul</a>
         </div>
+
+        <a href="#serviceMore">To bespoke services...</a>
 
         {/* This creates the service options and items by using a herocard generator */}
         {ServiceOptions.map(createServiceOptions)}
+
+        <hr/>
+
+        <div className="serviceMore" id="serviceMore">
+            <h2 id="serviceMore">Bespoke services</h2>
+            <Alacarte />
+        </div>
 
     </div>
     )
