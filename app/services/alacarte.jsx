@@ -58,6 +58,20 @@ const Alacarte = () => {
             </div>
         </div>
 
+        <div className="service pedalService">
+            <h3>Pedals Service</h3>
+            <h3>$60</h3>
+            <p>Looking to maximise the efficiency for every watt you put down? What better way to start off with your pedals- the first contact point of your massive outputs?</p>
+
+            <button onClick={ReadMore} id="readmorebutton" name={"3"} className="showHideButton">Show More...</button>
+
+            <div className="subtexthidden" id="subtext 3">
+                <p>As the most dynamic part of the three contact points on your bike (pedals, sadddle and handlbar), the pedals definitely takes the most abuse from rider's power delivery as well as the elements.</p> 
+                <p>Regular service ensures that there are no play in the pedals (both radially and laterally) and optimizes smoothness when pedalling.</p>
+                <p>Not to mention, servicing your pedals cleans out all grit and grime from the pedal bodies and bearings, prolonging the life of your most important contact point on the bike.</p>
+            </div>
+        </div>
+
     </div>
   )
 }

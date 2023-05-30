@@ -64,7 +64,7 @@ span {
 .namePrice {
     display: flex;
     align-content: bottom;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: small;
 }
 
@@ -91,10 +91,6 @@ span {
 /* Bespoke service section styling*/
 .subtexthidden {
     display: none;
-}
-
-.subtext>p {
-    max-width: 750.17px;
 }
 
 .service {
@@ -126,7 +122,14 @@ span {
         margin: 0 auto;
     }
 
-    .subtext {
-        max-width: 785.17px;
+    .service {
+        padding: 2rem 3rem;
+    }
+
+    .serviceList {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 2rem;
     }
 }
