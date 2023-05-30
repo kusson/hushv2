@@ -5,9 +5,14 @@ import "@styles/booking.css";
 
 const Booking = () => {
   return (
-    <div>
-    Booking
+    <div className="bookingContainer">
+    <h1>Book your service today</h1>
     <form>
+      <h2>Name:</h2>
+      <input></input>
+      <h2>Number:</h2>
+      <input></input>
+      <h2>email:</h2>
       <input></input>
     </form>
     </div>

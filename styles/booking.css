@@ -1,0 +1,14 @@
+.bookingContainer {
+    max-width: 700px;
+    margin: 0rem auto;
+}
+
+.bookingContainer>h1 {
+    font-family: "lilita one", cursive;
+    font-weight: 500;
+}
+
+form {
+    background-color: white;
+    padding: 1rem;
+}
