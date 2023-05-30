@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 2rem 1rem;
+    margin: 0 auto;
 }
 
 .serviceContainer>hr {
@@ -118,7 +119,7 @@ span {
 
 @media screen and (min-width:640px) {
     .serviceContainer {
-        max-width: 70%;
+        max-width: 700px;
         margin: 0 auto;
     }
 

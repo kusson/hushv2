@@ -54,8 +54,8 @@ const Navbar = () => {
             <ul className="navlist" id="navlist">
                 <Link href="/" onClick={autoClose}>Home</Link>
                 <Link href="/about" onClick={autoClose}>About</Link>
-                <Link href="/portfolio" onClick={autoClose}>Portfolio</Link>
                 <Link href="/services" onClick={autoClose}>Services</Link>
+                <Link href="/booking" onClick={autoClose}>Bookings</Link>
             </ul>
 
             {/*burger menu */}
