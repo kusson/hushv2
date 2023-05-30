@@ -1,6 +1,10 @@
 .bookingContainer {
-    max-width: 700px;
     margin: 0rem auto;
+}
+
+.bookingForm>* {
+    background-color: white;
+    color: blue;
 }
 
 .bookingContainer>h1 {
@@ -10,5 +14,26 @@
 
 form {
     background-color: white;
-    padding: 1rem;
+    padding: 1.5rem;
+}
+
+.formField>* {
+    background-color: white;
+    color: blue;
+}
+
+.formField {
+    width: 100%;
+    background-color: white;
+    padding: 1rem 0rem;
+}
+
+input {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 640px) {
+    .bookingContainer {
+        width: 600px;
+    }
 }
