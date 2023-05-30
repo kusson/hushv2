@@ -27,12 +27,12 @@ const Alacarte = () => {
   return (
     <div className="bespokeServices">
 
-        <div className="bikeprotection">
+        <div className="service bikeprotection">
             <h3>Bike frame protection</h3>
             <h3>From $170</h3>
             <p>Just got a new bike and not sure how to protect that paint job? Hush Hush got you covered. Literally.</p>
             
-            <button onClick={ReadMore} id="readmorebutton" name={"1"} className="button1">Show More...</button>
+            <button onClick={ReadMore} id="readmorebutton" name={"1"} className="showHideButton">Show More...</button>
             
             <div className="subtexthidden" id="subtext 1">
                 <p>Using automotive grade paint protection film (3M Scotchgard Pro Series), you can rest easy knowing that your pride and joy is protected against scratches, paint chips, abbrasions, scuffs, and general wear and tear of the paint job.</p>
@@ -41,12 +41,12 @@ const Alacarte = () => {
             </div>
         </div>
 
-        <div className="wheelbuild">
+        <div className="service wheelbuild">
             <h3>Customer Wheel Build</h3>
             <h3>From $150</h3>
             <p>Looking for some new wheels and don't want to spend a fortune? Hush Hush also do custom wheel builds.</p>
 
-            <button onClick={ReadMore} id="readmorebutton" name={"2"} className="button2">Show More...</button>
+            <button onClick={ReadMore} id="readmorebutton" name={"2"} className="showHideButton">Show More...</button>
 
             <div className="subtexthidden" id="subtext 2">
                 <p>Big brand carbon wheels are everywhere, and the ability to customise the look and ride feel is limited.</p>

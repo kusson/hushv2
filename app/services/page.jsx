@@ -33,7 +33,7 @@ const Services = () => {
             <a href="#theoverhaul">The Overhaul</a>
         </div>
 
-        <a href="#serviceMore">To bespoke services...</a>
+        <a href="#serviceMore" className="bespokeLink">To Bespoke services...</a>
 
         {/* This creates the service options and items by using a herocard generator */}
         {ServiceOptions.map(createServiceOptions)}
