@@ -10,18 +10,18 @@ const Booking = () => {
 
       <form className="bookingForm">
         <div className="formField">
-          <label>Name: </label>
-          <input></input>
+          <label for="name">Name: </label>
+          <input type="text" id="name" name="name"></input>
         </div>
 
         <div className="formField">
           <label>Number: </label>
-          <input></input>
+          <input type="number" id="number" name="number"></input>
         </div>
 
         <div className="formField">
           <label>email: </label>
-          <input></input>
+          <input type="email" id="email" name="email"></input>
         </div>
 
         <label for="serviceSelection">Choose a service: </label>
@@ -29,9 +29,16 @@ const Booking = () => {
           <option value="thecaress">The Caress</option>
           <option value="themeticulous">The Meticulous</option>
           <option value="theoverhaul">The Overhaul</option>
-          <option disabled="true">--------------</option>
-          <option>Wheel Building</option>
+          <option disabled="true" selected="true" value="">--------------</option>
+          <option value="wheelbuild">Wheel Building</option>
+          <option value="frameprotect">Frame Protection</option>
+          <option value="pedals">Pedals Service</option>
+          <option value="other">Other (Please specify)</option>
         </select> 
+
+        <textarea className="serviceText" placeholder="Please enter your request here."></textarea>
+
+        <input type="submit" value="Submit"/>
 
       </form>
 

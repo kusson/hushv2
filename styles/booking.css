@@ -2,6 +2,10 @@
     margin: 0rem auto;
 }
 
+.bookingForm {
+    margin: 0 auto;
+}
+
 .bookingForm>* {
     background-color: white;
     color: blue;
@@ -23,13 +27,24 @@ form {
 }
 
 .formField {
+    display: flex;
     width: 100%;
     background-color: white;
     padding: 1rem 0rem;
 }
 
-input {
+.formField>input {
     margin: 0 auto;
+    right: 100%;
+}
+
+textarea {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0rem;
+    width: 400px;
+    height: 150px;
+    padding: 0.5rem;
 }
 
 @media screen and (min-width: 640px) {
