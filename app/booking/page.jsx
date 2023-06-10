@@ -1,44 +1,63 @@
-import React from 'react'
+"use client"
+
+import React, {useState} from "react";
 import "@styles/booking.css";
 
 //localhost:3000/booking
 
 const Booking = () => {
+
+  let [username, setUsername] = useState("");
+  let [number, setNumber]  = useState("");
+  let [email, setEmail] = useState("");
+  let [dropdownSelect, setDropdownSelect] = useState ("");
+  let [userText, setUserText] = useState("");
+  
+  function handleForm() {
+    uname = toString(setUsername)
+    console.log(setUsername, setNumber, setEmail, setUserText)
+  }
+  
   return (
     <div className="bookingContainer">
       <h1>Book your service today</h1>
 
-      <form className="bookingForm">
+      <form className="bookingForm" method="post" onSubmit={handleForm}>
+        
         <div className="formField">
-          <label for="name">Name: </label>
-          <input type="text" id="name" name="name"></input>
+          <label>Name: </label>
+          <input type="text" id="name" name="name" placeholder="Name" defaultValue={username}
+          onChange={e => setUsername=(e.target.value)}></input>
         </div>
 
         <div className="formField">
           <label>Number: </label>
-          <input type="number" id="number" name="number"></input>
+          <input type="text" id="number" name="number" placeholder="Number" value={number}
+          onChange={e => setNumber(e.target.value)}></input>
         </div>
 
         <div className="formField">
           <label>email: </label>
-          <input type="email" id="email" name="email"></input>
+          <input type="email" id="email" name="email" placeholder="email" value={email}
+          onChange={e => setEmail(e.target.value)}></input>
         </div>
 
-        <label for="serviceSelection">Choose a service: </label>
-        <select name="serviceSelection" id="serviceSelection">
+        <label>Choose a service: </label>
+        <select name="serviceSelection" id="serviceSelection" value={dropdownSelect} onChange={e => setDropdownSelect(e.target.value)}>
           <option value="thecaress">The Caress</option>
           <option value="themeticulous">The Meticulous</option>
           <option value="theoverhaul">The Overhaul</option>
-          <option disabled="true" selected="true" value="">--------------</option>
+          <option disabled={true} defaultValue={true}>--------------</option>
           <option value="wheelbuild">Wheel Building</option>
           <option value="frameprotect">Frame Protection</option>
           <option value="pedals">Pedals Service</option>
           <option value="other">Other (Please specify)</option>
         </select> 
 
-        <textarea className="serviceText" placeholder="Please enter your request here."></textarea>
+        <textarea className="serviceText" name="userText" id="userText" placeholder="Please enter your request here." defaultValue={userText}
+        onSubmit={e => setUserText(e.target.value)}></textarea>
 
-        <input type="submit" value="Submit"/>
+        <button type="submit">Submit</button>
 
       </form>
 

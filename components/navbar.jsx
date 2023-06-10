@@ -47,7 +47,7 @@ const Navbar = () => {
                     
             {/*navbar logo image*/}
             <a className="navbar-logo" href="/">
-                <Image className="logo" src={logo} />
+                <Image className="logo" alt="logo" src={logo} />
             </a>
         
             {/*navbar link list */}
