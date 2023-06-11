@@ -1,4 +1,13 @@
-.socialContainer {
-    width: 3rem;
-    height: 1rem;
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0rem;
+    font-size: small;
+}
+
+.socialContainer>img {
+    height: 15px;
+    width: 15px;
+    padding: 0.5rem;
 }
