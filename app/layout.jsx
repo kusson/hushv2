@@ -1,6 +1,7 @@
 import React from 'react';
 import "@styles/globals.css";
 import Navbar from '@components/navbar';
+import Footer from '@components/footer';
 
 
 
@@ -23,11 +24,12 @@ const RootLayout = ( {children} ) => {
             </head>
 
             <body>
-            <Navbar />
-                <main className="app">
-                    <hr />
-                    {children}
-                </main>
+                <Navbar />
+                    <main className="app">
+                        <hr />
+                        {children}
+                    </main>
+                <Footer />
             </body>
         </html>
     
