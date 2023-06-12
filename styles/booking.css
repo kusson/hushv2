@@ -31,11 +31,26 @@ form {
     width: 100%;
     background-color: white;
     padding: 1rem 0rem;
+    justify-content: space-between;
 }
 
 .formField>input {
-    margin: 0 auto;
-    right: 100%;
+    margin-right: 2.5rem;
+}
+
+.serviceDropDown>* {
+    background-color: white;
+    color: blue;
+}
+.serviceDropDown {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+
+select {
+    border-width: 2px;
+    box-shadow: inset;
 }
 
 textarea {
@@ -43,7 +58,7 @@ textarea {
     flex-direction: column;
     margin: 2rem 0rem;
     width: 300px;
-    max-width: 535px;
+    max-width: 100%;
     height: 150px;
     padding: 0.5rem;
 }
@@ -55,14 +70,17 @@ textarea {
         justify-content: center;
     }
 
-    .formField>input {
-        display: flex;
-        align-content: flex-end;
-        justify-content: flex-end;
-        margin:20;
+    .bookingForm {
+        padding: 5rem;
     }
 
-    textarea {
-        width: 100%;
+    .formField>input {
+        margin-right:0;
+        /* min-width: 250px */
     }
+
+    .textArea {
+        max-width: 422px;
+    }
+
 }

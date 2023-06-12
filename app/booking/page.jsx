@@ -12,12 +12,20 @@ const Booking = () => {
   let [email, setEmail] = useState("");
   let [dropdownSelect, setDropdownSelect] = useState ("");
   let [userText, setUserText] = useState("");
-  
-  function handleForm() {
-    uname = toString(setUsername)
-    console.log(setUsername, setNumber, setEmail, setUserText)
+
+  let formInfo = {
+    formName: {setUsername},
+    formNumber: {setNumber},
+    formEmail: {setEmail},
+    formDrop: {setDropdownSelect},
+    formText: {setUserText},
   }
   
+  function handleForm() {
+      console.log(formInfo)
+  }
+
+
   return (
     <div className="bookingContainer">
       <h1>Book your service today</h1>
@@ -42,17 +50,19 @@ const Booking = () => {
           onChange={e => setEmail(e.target.value)}></input>
         </div>
 
-        <label>Choose a service: </label>
-        <select name="serviceSelection" id="serviceSelection" value={dropdownSelect} onChange={e => setDropdownSelect(e.target.value)}>
-          <option value="thecaress">The Caress</option>
-          <option value="themeticulous">The Meticulous</option>
-          <option value="theoverhaul">The Overhaul</option>
-          <option disabled={true} defaultValue={true}>--------------</option>
-          <option value="wheelbuild">Wheel Building</option>
-          <option value="frameprotect">Frame Protection</option>
-          <option value="pedals">Pedals Service</option>
-          <option value="other">Other (Please specify)</option>
-        </select> 
+        <div className="serviceDropDown">
+          <label>Choose a service: </label>
+          <select name="serviceSelection" id="serviceSelection" value={dropdownSelect} onChange={e => setDropdownSelect(e.target.value)}>
+            <option value="thecaress">The Caress</option>
+            <option value="themeticulous">The Meticulous</option>
+            <option value="theoverhaul">The Overhaul</option>
+            <option disabled={true} defaultValue={true}>--------------</option>
+            <option value="wheelbuild">Wheel Building</option>
+            <option value="frameprotect">Frame Protection</option>
+            <option value="pedals">Pedals Service</option>
+            <option value="other">Other (Please specify)</option>
+          </select> 
+        </div>
 
         <textarea className="serviceText" name="userText" id="userText" placeholder="Please enter your request here." defaultValue={userText}
         onSubmit={e => setUserText(e.target.value)}></textarea>
